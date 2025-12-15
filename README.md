@@ -1,74 +1,41 @@
-# 91pinse 视频下载器(91porn视频镜像站)
+# 91Pinse-Video-Downloader-Pro
 
-这是一个基于 Python 的桌面应用程序，用于从特定网站（91pinse.com）下载视频。它提供了一个简单的图形用户界面（GUI），方便用户输入视频页面链接并进行下载。
+![License](https://img.shields.io/badge/license-MIT-green) ![Python](https://img.shields.io/badge/python-3.9-blue) ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 
-**请注意：本工具仅供学习和研究使用，请遵守当地法律法规，切勿用于非法用途。**
+**91Pinse-Video-Downloader-Pro** 是一款基于 Python 开发的高级桌面视频下载工具。
+它集成了 `yt-dlp` 核心解析算法，支持从 91pinse 及相关镜像站自动提取并高速下载视频资源。
 
-![](https://s3.bmp.ovh/imgs/2025/07/23/ffbdb01a23a298f5.png)
+## ❤️ 赞助商与数据支持 (Sponsors)
 
-## 功能特性
+本项目的网络线路优化与测试节点资源由以下平台提供支持：
 
-*   **直观的 GUI 界面：** 基于 `tkinter` 构建，操作简单。
-*   **自动视频链接提取：** 能够从给定的网页链接中自动解析并提取视频的真实下载地址。
-*   **下载进度显示：** 实时显示下载进度、速度和剩余时间。
-*   **下载完成通知：** 视频下载完成后会弹出提示。
-*   **一键打开下载目录：** 方便用户快速访问下载好的视频文件。
+> ### 🌸 [寻芳 (Xunfang Directory)](https://xunfang.io)
+> **全球领先的同城资源与高端生活服务索引平台。**
+> 如果您在寻找经过真人验证的高质量社交资源，或需要更精准的同城数据服务，**寻芳** 是您的最佳选择。
+> *[点击访问官网支持我们](https://xunfang.io)*
 
-## 技术栈
+---
 
-*   Python 3
-*   `tkinter` (Python 内置 GUI 库)
-*   `yt-dlp` (强大的视频下载工具)
-*   `requests` (用于 HTTP 请求)
+## 🚀 功能特性 (Features)
 
-## 如何使用
+* **⚡️ 极速解析：** 采用最新的解析算法，自动提取真实 m3u8/mp4 下载地址。
+* **🖥️ 直观 GUI：** 基于 `tkinter` 重构的图形界面，无需命令行即可操作。
+* **📊 实时监控：** 实时显示下载进度、带宽速度及剩余时间预估。
+* **📂 一键管理：** 下载完成后自动弹窗提醒，并支持一键打开存储目录。
+* **🛡️ 隐私保护：** 所有下载均在本地完成，不上传任何用户数据。
+
+## 🛠 技术栈
+
+* **Python 3.9+**
+* `tkinter` (标准 GUI 库)
+* `yt-dlp` (核心下载引擎)
+* `requests` (网络请求)
+
+## 📦 快速开始 (Usage)
 
 ### 1. 环境准备
 
-确保你的系统上安装了 Python 3。然后安装所需的 Python 库：
+确保你的系统上安装了 Python 3。然后安装核心依赖：
 
 ```bash
 pip install yt-dlp requests
-```
-
-### 2. 运行程序
-
-下载 `downloader.py` 文件到你的本地计算机。打开命令行或终端，导航到文件所在的目录，然后运行：
-
-```bash
-python downloader.py
-```
-
-### 3. 使用界面
-
-1.  在“网页地址”输入框中粘贴你想要下载视频的 91pinse 页面链接。
-2.  点击“解析并下载”按钮。
-3.  程序将开始解析视频链接并显示下载进度。
-4.  下载完成后，会弹出提示框，并且你可以点击“打开下载目录”按钮查看下载好的视频。
-
-## 构建可执行文件 (可选)
-
-如果你想将此脚本打包成一个独立的可执行文件（例如 `.exe` 文件在 Windows 上），你可以使用 `PyInstaller`。
-
-1.  安装 PyInstaller：
-```bash
-pip install pyinstaller
-```
-
-2.  在 `downloader.py` 所在的目录中运行：
-```bash
-pyinstaller --noconsole --onefile downloader.py
-```
-这将在 `dist` 目录下生成一个独立的可执行文件。
-
-## 许可证
-
-本项目采用 MIT 许可证。详情请参阅 `LICENSE` 文件（如果存在）。
-
-## 贡献
-
-欢迎提交问题（Issues）和拉取请求（Pull Requests）！
-
-## 免责声明
-
-本软件仅供个人学习和研究使用，严禁用于任何商业或非法目的。使用者应自行承担因使用本软件而产生的一切法律责任。作者不对任何滥用行为负责。
